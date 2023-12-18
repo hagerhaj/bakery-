@@ -1,0 +1,321 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C50636E4-35E2-43D6-BF86-C94DFDD52831}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>bakery</RootNamespace>
+    <AssemblyName>bakery</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.UI2, Version=2.0.3.4, Culture=neutral, PublicKeyToken=4015e4865bda28a4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.3.4\lib\net40\Guna.UI2.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="addrestaurant.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addrestaurant.Designer.cs">
+      <DependentUpon>addrestaurant.cs</DependentUpon>
+    </Compile>
+    <Compile Include="distribute.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="distribute.Designer.cs">
+      <DependentUpon>distribute.cs</DependentUpon>
+    </Compile>
+    <Compile Include="empfData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="empfData.Designer.cs">
+      <DependentUpon>empfData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="finance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="finance.Designer.cs">
+      <DependentUpon>finance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="main.Designer.cs">
+      <DependentUpon>main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="outgoingItems.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="outgoingItems.Designer.cs">
+      <DependentUpon>outgoingItems.cs</DependentUpon>
+    </Compile>
+    <Compile Include="payroll.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="payroll.Designer.cs">
+      <DependentUpon>payroll.cs</DependentUpon>
+    </Compile>
+    <Compile Include="product.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="product.Designer.cs">
+      <DependentUpon>product.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="tsaaera.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tsaaera.Designer.cs">
+      <DependentUpon>tsaaera.cs</DependentUpon>
+    </Compile>
+    <Compile Include="wrdiya.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="wrdiya.Designer.cs">
+      <DependentUpon>wrdiya.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="addrestaurant.resx">
+      <DependentUpon>addrestaurant.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="distribute.resx">
+      <DependentUpon>distribute.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="empfData.resx">
+      <DependentUpon>empfData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="finance.resx">
+      <DependentUpon>finance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="main.resx">
+      <DependentUpon>main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="outgoingItems.resx">
+      <DependentUpon>outgoingItems.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="payroll.resx">
+      <DependentUpon>payroll.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="product.resx">
+      <DependentUpon>product.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="tsaaera.resx">
+      <DependentUpon>tsaaera.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="wrdiya.resx">
+      <DependentUpon>wrdiya.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\key.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\supply-chain-icon-png-supply-chain-management-logo-11563404978zvcf3asjrw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\man-22-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Delete.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow_up.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bin-open.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\015.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\istockphoto-1217031338-612x612-fococlipping-standard %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\301736710_458694699606932_7145225349708220376_n-fococlipping-standard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Truck.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngegg %287%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Presentation1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trans.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wrdia.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\006.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\003.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\002.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\015.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\018.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0181.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\020.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\055.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\009.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\040.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\istockphoto-1218442006-612x612.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dough-g435ac08f3_1920.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
