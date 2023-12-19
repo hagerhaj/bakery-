@@ -1,2 +1,5 @@
 # bakery-
-Bakery and oven management program
+Bakery and oven management 
+desktop
+c#
+#sql server
